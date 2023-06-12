@@ -1,0 +1,73 @@
+.floatnav{
+    background-color: #252425;
+    border-radius: 20rem;
+    display: flex;
+    top: 2rem;
+    z-index: 2000;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.floatnavitem{
+    cursor: pointer;
+    flex-wrap: nowrap;
+    float: right;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border-radius: 20rem;
+    padding: 0.7rem 2.8rem 0.7rem 2.8rem;
+}
+.navlogo{
+    padding-inline: 2rem;
+    width: 9rem;
+}
+.socialcontainer{
+    display: flex;
+    justify-content: end;
+    padding-inline: 2rem;
+}
+.social{
+    background-color: #252425;
+    border-radius: 20rem;
+    display: flex;
+    width: 12rem;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+.socialitem{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar {
+    width: 100%;
+    padding-top: 2rem;
+    position: absolute;
+    top: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1000px){
+    .social{
+        display: none;
+    }
+    .floatnav {
+        top: 5rem;
+    }
+}
+@media (max-width: 660px){
+    .floatnavitem{
+        padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+    }
+}

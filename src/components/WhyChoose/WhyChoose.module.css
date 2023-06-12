@@ -1,0 +1,88 @@
+.whychooseContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whychooseDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 32rem;
+}
+.whychooseDetails h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.whychooseItem{
+    display: flex;
+    position: relative;
+    z-index: 0;
+    justify-content: start;
+    padding: 1rem;
+    width: 18rem;
+    height:18rem;
+    align-items: end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to top, #3802c2d4, #0066e2e2);
+    background-size: cover;
+}
+.whychooseContent{
+    display: flex;
+    flex-direction: row;
+}
+.expandcontent{
+    display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 1.1rem;
+  opacity: 50%;
+  width: 90%;
+  height: 90%;
+}
+.titlecontent{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.backgroundLogo{
+  width: 40rem;
+  position: absolute;
+  z-index: -1;
+  transform:translateX(-50%) translateY(-40%);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  color: #fff; /* Change the text color as desired */
+}
+.whychooseItem:hover{
+  border: 3px solid #55DFFF;
+}
+.whychooseItem:hover .overlay{
+  opacity: 20%;
+  transition: opacity 0.5s ease-in-out;
+}
+.whychooseItem:hover .expandcontent{
+    display: block;
+}
+.whychooseItem:hover .content{
+    animation: align-items-animation 0.5s ease-in-out forwards;
+}
+
+@keyframes align-items-animation {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 3rem;
+  }
+}

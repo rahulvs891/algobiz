@@ -1,0 +1,19 @@
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(125deg,#4593F2,  #1A40DD, #480BDF);
+}
+.title{
+    font-size: 10rem;
+    font-weight:bolder;
+    background: linear-gradient(45deg, #56E2FF,#247BEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1000px){
+    .title{
+        font-size: 7rem;
+    }
+}

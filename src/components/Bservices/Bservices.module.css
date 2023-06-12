@@ -1,0 +1,140 @@
+.bServicesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block: 8rem;
+}
+.bServices{
+    display: flex;
+    justify-content: center;
+}
+.serviceBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-inline:1rem;
+  width: 8rem;
+  border-radius: 1rem;
+  height: 25rem;
+  transition: width 0.3s ease;
+}
+
+.serviceBox h3{
+            font-weight: 500;
+    color: white;
+    position: absolute;
+    font-size: 1.3rem;
+    bottom: 4rem;
+    left:0rem;
+    transform: rotate(-90deg);
+}
+.serviceExpanded {
+  width: 16rem;
+  
+}
+.serviceExpanded h3{
+    bottom: 1rem;
+    transform: rotate(0);
+    transform-origin:bottom;
+    transition: none;
+    left: 1rem;
+}
+.serviceBox1{
+    background:url('/assets/service-web.jpg');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.serviceBox2{
+    background:url('/assets/service-app.jpg');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.serviceBox3{
+    background:url('/assets/service-registration.jpg');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.serviceBox4{
+    background:url('/assets/service-business.jpg');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.serviceDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.serviceDetails h3{
+    font-size: 2rem;
+}
+
+.serviceDetailsContainer {
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serviceDetails button{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 1.3rem;
+    background: linear-gradient( #2D76EC,#3D2DE3);
+}
+@media (max-width: 1090px) {
+    .bServicesContainer{
+        margin-block: 6rem;
+    }
+    .serviceBox{
+        width: 6rem;
+        height: 18rem;
+    }
+    .serviceBox h3{
+        font-size: 1rem;
+
+    }
+    .serviceExpanded {
+    width: 12rem;
+    }
+}
+@media (max-width: 930px){
+    .serviceDetails h3{
+    font-size: 1.5rem;
+}
+
+.serviceDetailsContainer {
+    padding-inline: 1rem;
+}
+.serviceDetails button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+}
+@media (max-width: 840px){
+.bServicesContainer{
+    flex-direction: column;
+}
+.serviceDetails h3{
+    font-size: 2rem;
+}
+.serviceDetailsContainer{
+    order: 2;
+    margin-top: 2rem;
+}
+.serviceDetails button{
+    width: 100%;
+}
+.bServices{
+    order: 1;
+}
+}
